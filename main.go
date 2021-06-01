@@ -6,18 +6,17 @@
 package main
 
 import (
-	
 	"fmt"
 
 	"math/rand"
 
 	"time"
 )
-	
+
 func main() {
-  var userGuess int
-  var answer int
-  var counter = 0
+	var userGuess int
+	var answer int
+	var counter = 0
 
 	// process
 	rand.Seed(time.Now().UnixNano())
@@ -26,9 +25,7 @@ func main() {
 
 	answer = rand.Intn(max-min) + min
 
-	
-
-  for userGuess != answer && counter < 10 {
+	for userGuess != answer && counter < 10 {
 		fmt.Print(" Enter a number from 0 to 9 (Integers only): ")
 		fmt.Scanln(&userGuess)
 		if userGuess < answer {
