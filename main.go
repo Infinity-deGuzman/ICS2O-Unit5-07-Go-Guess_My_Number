@@ -37,7 +37,6 @@ func main() {
 		} else {
 			fmt.Print("Congrats! You got it right! The hidden number is ", answer)
 			counter++
-			break
 		}
 	}
 }
